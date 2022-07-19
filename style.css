@@ -1,11 +1,12 @@
 
 .navBar
 {
+width: 100%;
 background-color: rgb(51,51,51);
 overflow: hidden;
-text-align: left;
 padding-top: 7px;
 padding-left: 10px;
+box-sizing: border-box;
 
 }
 a{
@@ -17,9 +18,9 @@ a{
 {
     margin-top: 20px;
     border: 1px solid rgb(204,204,204);
-    width: 800px;
-    margin-left: 30px;
+    width: 740px;
     text-indent: 10px;
+    box-sizing: border-box;
 }
 .image
 {
@@ -28,19 +29,16 @@ a{
     padding-bottom: 4px;
 }
 .heading{
-    height: 100%;
+    width: 100%;
     font-size: 50px;
     background-color: rgb(82,151,199);
     color: white;
     text-indent: 10px;
     padding: 20px;
-    overflow: scroll;
-    position:relative;
+    overflow: hidden;
     font-family: "Open Sans", sans-serif;
-
-    
+    box-sizing: border-box;
 }
-
 .content
 {
     margin-left: 30px;
@@ -51,4 +49,23 @@ li{
 ul {
     list-style-type: "-";
 }
-
+@media only screen  and (max-width:780px){
+    .newsSection{
+        margin-right: 8px;
+        width:100%;
+    }
+}
+@media only screen  and (max-width:420px){
+    .heading{
+        font-size: 30px;
+        display: block;
+    }
+    .navBar a {
+        display: block;
+    }
+    .image{
+        float:none;
+        /* display: block; */
+        padding-left: 7%;
+    }
+}
